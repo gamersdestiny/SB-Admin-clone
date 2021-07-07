@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+
+:root{
+	--primary-color: #4e73df;
+	--light-bg: #f6f7fa;
+	--light-accent: #94abec;
+	--hr-color: #6888e4;
+	--dark-400: #0D1117;
+	--blue: #4e73df;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #e74a3b;
+    --orange: #fd7e14;
+    --yellow: #f6c23e;
+    --green: #1cc88a;
+    --teal: #20c9a6;
+    --cyan: #36b9cc;
+    --white: #fff;
+    --gray: #858796;
+    --gray-dark: #5a5c69;
+    --secondary: #858796;
+    --success: #1cc88a;
+    --info: #36b9cc;
+    --warning: #f6c23e;
+    --danger: #e74a3b;
+    --light: #f8f9fc;
+    --dark: #5a5c69;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Metrophobic', sans-serif;
+}
+
+hr{
+	color: var(--light-accent);
+	margin: 1rem 0;
+	font-weight: 200;
+	opacity: .3;
+}
+
+li{
+	list-style: none;
+}
+/* ==================================navbar==================================================== */
+.navbar-section{
+	display: flex;
+	flex-direction: column;
+	width: 14rem;
+	height: 100vh;
+	background: #4e73df;
+	color: white;
+	position: relative;
+}
+
+.navbar{
+	align-self: center;
+	width: 100%;
+}
+/* ==========================logo====================== */
+.logo-cont{
+	display: flex;
+	justify-content: space-around;
+}
+
+.lg-icon{
+	margin:  auto 0;
+	transform: rotate(-20deg);
+}
+
+.logo{
+	margin: 1rem;
+}
+
+/* =======================dashboard======================== */
+
+.dash-cont{
+	display: flex;
+}
+.dash-icon{
+	margin: auto .5rem;
+}
+.dash{
+	margin: auto 0;
+}
+
+/* ========================interface========================= */
+
+.int-title{
+	opacity: .7;
+	font-weight: 100;
+	margin: auto 0;
+}
+.li-show{
+	display: list-item;
+}
+
+.interface>*{
+	margin: 1rem auto;
+}
+
+/* ===================components=============== */
+
+.components-cont{
+	display: flex;
+	width: 100%;
+	position: relative;
+	margin: .5rem;
+}
+
+.components-cont>*{
+	margin-right: .3rem;
+}
+
+.c-angle-right, .i-angle-right{
+	position: absolute;
+	right: .5rem;
+}
+
+.rotate-down{
+	transition: .2s ease all;
+	animation: rotate-down .2s forwards;
+}
+
+.fa-angle-right{
+	cursor: pointer;
+}
+
+
+/* ==================utilities=================== */
+
+.components{
+	background: var(--light-bg);
+	color: var(--dark-400);
+	opacity: 0;
+	height: 0;
+	margin: 1rem;
+	transition: .1s ease-out;
+}
+
+.show-comp{
+	padding: 1rem;
+	border-radius: .5rem;
+	display: block;
+	height: auto;
+	opacity: 1;
+}
+
+.components>*{
+	margin: .5rem 0;
+}
+
+/* ================toggle================ */
+
+.toggle-cont{
+	position: absolute;
+	bottom: 2	rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.round-toggle{
+	background: var(--light-accent);
+	height: 3rem;
+	width: 3rem;
+	border-radius: 50%;
+	position: relative;
+}
+
+.round-toggle span{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

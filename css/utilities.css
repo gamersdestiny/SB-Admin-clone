@@ -1,0 +1,21 @@
+.flex{
+	display: flex;
+}
+.grid{
+	display: grid;
+}
+.mg-a{
+	margin: auto;	
+}
+.mg-a1{
+	margin: auto 1rem;
+}
+.mg-a05{
+	margin: auto .5rem;
+}
+.mr-05{
+	margin: auto .5rem;
+}
+.uppercase{
+	text-transform: uppercase;
+}
