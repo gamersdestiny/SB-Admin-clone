@@ -1,0 +1,149 @@
+/* =======================dashboard======================== */
+
+.dash-cont{
+	display: flex;
+}
+.dash-icon{
+	margin: auto .5rem;
+}
+.dash{
+	margin: auto 0;
+}
+
+
+/*===================== dashboard================================= */
+
+.dashboard-section{
+	padding: 1rem;
+	margin-top: 1rem;
+	padding-left: 15rem;
+}
+
+.dash-title{
+	font-weight: 400;
+	color: var(--secondary);
+}
+
+.dash-hero{
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem auto;
+}
+
+.report-btn{
+	text-decoration: none;
+	background: var(--blue);
+	color: var(--white);
+	font-size: .85rem;
+	padding: .5em;
+	margin: auto 0;
+	border-radius: .3em;
+	text-align: center;
+}
+.report-icon{
+	margin: auto .2em;
+	opacity: .7;
+}
+
+/* ========================dashboard cards=================================== */
+
+.dash-cards{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.dash-card{
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem 1rem;
+	margin: .5rem;
+	width: auto;
+	background: var(--white);
+	border-radius: .5rem;
+	box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+	position: relative;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: .85rem;
+}
+
+.card-amount{
+	color: var(--dark);
+}
+
+.earnings-monthly{
+	border-left: .25rem solid var(--primary-color);
+}
+
+.earnings-monthly .card-title{
+	color: var(--primary-color);
+}
+
+.earnings-annual{
+	border-left: .25rem solid var(--teal);
+}
+
+.earnings-annual .card-title{
+	color: var(--teal);
+}
+
+.tasks{
+	border-left: .25rem solid var(--cyan);
+}
+
+.tasks .card-title{
+	color: var(--cyan);
+}
+
+.pending-req{
+	border-left: .25rem solid var(--yellow);
+}
+
+.pending-req .card-title{
+	color: var(--yellow);
+}
+
+/* ======================overview card===================================== */
+
+.overview-card{
+	background: var(--white);
+	box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+	border-radius: .25em;
+	margin: 1rem .5rem;
+	border: 1px solid black;
+	padding: 1rem;
+}
+
+.overview-head{
+	color: var(--primary-color);
+	border-bottom: 1px solid rgba(58,59,69,.15);
+	padding: 1rem;
+	width: 100%;
+}
+
+/* =====================graph=================== */
+
+.graph{
+	display: flex;
+}
+.earning-overview{
+	width: 70%;
+	height: auto;
+	margin: .5rem;
+}
+
+.earning-graph, .revenue-graph{
+	width: 100%;
+	height: auto;
+}
+
+.line-chart{
+	width: auto;
+	height: auto;
+}
+
+.revenue-sources{
+	width: 30%;
+	height: auto;
+	margin: .5rem;
+}

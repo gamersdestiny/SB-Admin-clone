@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
 
 :root{
-	--primary-color: #4e73df;
+	--primary-color: #4f73df;
 	--light-bg: #f6f7fa;
 	--light-accent: #94abec;
 	--hr-color: #6888e4;
@@ -35,10 +35,14 @@
 	font-family: 'Metrophobic', sans-serif;
 }
 
+body{
+	background: var(--light);
+}
+
 hr{
 	color: var(--light-accent);
-	margin: 1rem 0;
-	font-weight: 200;
+	margin: 1rem auto;
+	width: 85%;
 	opacity: .3;
 }
 
@@ -49,16 +53,17 @@ li{
 .navbar-section{
 	display: flex;
 	flex-direction: column;
+	float: left;
 	width: 14rem;
-	height: 100vh;
+	height: 200vh;
 	background: #4e73df;
-	color: white;
 	position: relative;
 }
 
 .navbar{
 	align-self: center;
-	width: 100%;
+	color: white;
+	width: 90%;
 }
 /* ==========================logo====================== */
 .logo-cont{
@@ -73,18 +78,6 @@ li{
 
 .logo{
 	margin: 1rem;
-}
-
-/* =======================dashboard======================== */
-
-.dash-cont{
-	display: flex;
-}
-.dash-icon{
-	margin: auto .5rem;
-}
-.dash{
-	margin: auto 0;
 }
 
 /* ========================interface========================= */
@@ -157,7 +150,7 @@ li{
 
 .toggle-cont{
 	position: absolute;
-	bottom: 2	rem;
+	top: 85vh;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -175,4 +168,87 @@ li{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+/* =====================================topnav============================== */
+
+.topnav{
+	display: grid;
+	grid-template-columns: 5fr 1fr;
+	padding: .2rem;
+	box-shadow: 1px 1px 10px var(--gray-dark);
+}
+
+.nav-left{
+	margin: .5rem;
+	margin-left: 1rem;
+}
+
+.nav-right{
+	display: flex;
+	margin: .5rem;
+}
+
+.nav-right>*{
+	margin: auto .5rem;
+}
+
+.top-search{
+	border: 1px solid var(--light);
+	outline: none;
+	border-radius: .3rem;
+	padding: 1rem;
+	width: 30%;
+}
+.top-search:focus{
+	border: 1px solid var(--light-accent);
+}
+
+.icon-search{
+	background: var(--hr-color);
+	color: var(--white);
+	padding: 1rem;
+	border-radius: .3rem;
+	margin-left: -0.5rem;
+}
+
+.icon-search:hover{
+	background: var(--primary-color);
+}
+
+.notification, .message{
+	color: var(--secondary);
+	position: relative;
+}
+
+.notification:hover, .message:hover{
+	color: var(--dark-gray);
+}
+
+.noms{
+	position: absolute;
+	top: 0rem;
+	font-size: .5rem;
+	padding: 0 .1rem;
+	background: var(--red);
+	color: var(--white);
+	border-radius: .2rem;
+	right: -0.2rem;
+}
+
+.divider{
+	background: var(--dark-400);
+	height: 80%;
+	width: 1px;
+	opacity: .3;
+}
+
+.top-profile{
+	height: 2rem;
+	border-radius: 50%;
+	background: var(--blue);
+}
+.username{
+	font-size: 13px;
+	color: var(--secondary);
 }

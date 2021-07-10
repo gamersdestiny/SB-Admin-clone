@@ -39,3 +39,4 @@ iArrowRight.addEventListener('click', (e)=>{
 		iArwCount--;
 	}
 });
+

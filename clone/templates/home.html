@@ -1,0 +1,46 @@
+{% extends 'index.html' %}
+<!-- ========================dashboard============================== -->
+{% block content %}
+<section class="dashboard-section">
+	<div class="dash-hero">
+		<h2 class="dash-title">Dashboard</h2>
+		<a href="#" class="report-btn"><span class="report-icon"><i class="fas fa-download fa-sm text-white-50"></i></span>Generate Report</a>
+	</div>
+	<div class="dash-cards">
+		<div class="dash-card earnings-monthly">
+			<p class="card-title">Earnings (monthly)</p>
+			<H2 class="card-amount">$40,000</H2>
+			<span class="card-icon"></span>
+		</div>
+		<div class="dash-card earnings-annual">
+			<p class="card-title">earnings (annual)</p>
+			<H2 class="card-amount">$215,000</H2>
+			<span class="card-icon"></span>
+		</div>
+		<div class="dash-card tasks">
+			<p class="card-title">tasks</p>
+			<H2 class="card-amount">50%</H2>
+			<span class="card-icon"></span>
+		</div>
+		<div class="dash-card pending-req">
+			<p class="card-title">pending requests</p>
+			<H2 class="card-amount">18</H2>
+			<span class="card-icon"></span>
+		</div>
+	</div>
+	<div class="graph">
+		<div class="earning-overview overview-card">
+			<div class="overview-head"><h4 class="overview">Earnings Overview</h4><span class="3dot"></span></div>
+			<div class="earning-graph">
+				<canvas class="line-chart"></canvas>
+			</div>
+		</div>
+		<div class="revenue-sources overview-card">
+			<div class="overview-head"><h4 class="overview">Revenuse Sources</h4><span class="3dot"></span></div>
+			<div class="revenue-graph">
+				<canvas class="donut-chart"></canvas>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

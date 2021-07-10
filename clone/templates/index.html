@@ -10,9 +10,11 @@
 	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
 	<!-- ==================custom css====================== -->
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/utilities.css">
-	<link rel="stylesheet" href="css/keyframes.css">
+	{% load static%}
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'css/keyframes.css' %}">
+	<link rel="stylesheet" href="{% static 'css/utilities.css' %}">
+	<link rel="stylesheet" href="{% static 'css/dash.css' %}">
 
 	<title>SB-Admin-Home</title>
 </head>
@@ -55,8 +57,25 @@
 			</div>
 		</nav>
 	</section>
-
+<!-- ==========================topnav============================= -->
+	<div class="topnav">
+		<div class="nav-left">
+			<input type="search" name="top-search" class="top-search" placeholder="search for...">
+			<span class="icon-search"></span>
+		</div>
+		<div class="nav-right">
+			<div class="notification"><i class="fas fa-bell fa-fw"></i><span class="noms">9<sup>+</sup></span></div>
+			<div class="message"><i class="fas fa-envelope fa-fw"></i><span class="noms">9<sup>+</sup></span></div>
+			<div class="divider"></div>
+			<p class="username">Guna</p>
+			<img src="{% static 'svg/undraw_profile.svg' %}" class="top-profile" alt="">
+		</div>
+	</div>
+	{% block content %}
+	{% endblock  %}
+	
 	<!-- =================================custom js===================================== -->
-	<script src="js/app.js"></script>
+	<script src="{% static 'js/app.js' %}"></script>
+	<script src="{% static 'js/chart.js' %}"></script>
 </body>
 </html>
