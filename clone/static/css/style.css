@@ -102,6 +102,7 @@ li{
 	width: 100%;
 	position: relative;
 	margin: .5rem;
+	cursor: pointer;
 }
 
 .components-cont>*{

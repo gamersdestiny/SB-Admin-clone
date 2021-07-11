@@ -2,16 +2,22 @@
 const cArrowRight = document.querySelector('.c-angle-right');
 const components = document.querySelector('.components');
 const icomponents = document.querySelector('.icomponents');
+const cContainer = document.querySelector('.cc-container');
+const uContainer = document.querySelector('.uc-container');
+
+
 var arwCount = 0;
 
-cArrowRight.addEventListener('click', (e)=>{
+cContainer.addEventListener('click', (e)=>{
 	if (arwCount%2==0){
 		cArrowRight.classList.add('rotate-down');
 		components.classList.add('show-comp');
-		iArrowRight.classList.remove('rotate-down');
-		icomponents.classList.remove('show-comp');
 		arwCount++;
-		iArwCount--;
+		if(iArwCount>0){
+			iArrowRight.classList.remove('rotate-down');
+			icomponents.classList.remove('show-comp');
+			iArwCount--;
+		}
 	} 
 	else {
 		cArrowRight.classList.remove('rotate-down');
@@ -20,17 +26,19 @@ cArrowRight.addEventListener('click', (e)=>{
 	}
 });
 
-// i arrow
+// u arrow
 const iArrowRight = document.querySelector('.i-angle-right');
 var iArwCount = 0;
 
-iArrowRight.addEventListener('click', (e)=>{
+uContainer.addEventListener('click', (e)=>{
 	if (iArwCount%2==0){
 		iArrowRight.classList.add('rotate-down');
 		icomponents.classList.add('show-comp');
-		cArrowRight.classList.remove('rotate-down');
-		components.classList.remove('show-comp');
-		arwCount--;
+		if(arwCount>0){
+			cArrowRight.classList.remove('rotate-down');
+			components.classList.remove('show-comp');
+			arwCount--;
+		}
 		iArwCount++;
 	} 
 	else {

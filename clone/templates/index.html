@@ -32,7 +32,7 @@
 			<hr>
 			<ul class="interface">
 				<h5 class="int-title uppercase">Interface</h5>
-				<div class="components-cont">
+				<div class="components-cont cc-container ">
 					<span class="comp-icon"><i class="fas fa-fw fa-cog"></i></span><h5 class="int-title">Components</h5><span class="c-angle-right"><i class="fas fa-angle-right"></i></span>
 				</div>
 					<div class="components">
@@ -41,7 +41,7 @@
 						<li class="links">Cards</li>
 					</div>
 				<div class="utilities">
-					<div class="components-cont">
+					<div class="components-cont uc-container">
 						<span class="comp-icon"><i class="fas fa-fw fa-wrench"></i></span><h5 class="int-title">Utilities</h5><span class="i-angle-right"><i class="fas fa-angle-right"></i></span>
 					</div>
 					<div class="components icomponents">
@@ -73,7 +73,9 @@
 	</div>
 	{% block content %}
 	{% endblock  %}
-	
+	<footer class="copyright">
+		<p class="copy">copyright &copy; Your Website <!--usedjango -->2021</p>
+	</footer>
 	<!-- =================================custom js===================================== -->
 	<script src="{% static 'js/app.js' %}"></script>
 	<script src="{% static 'js/chart.js' %}"></script>

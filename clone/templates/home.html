@@ -1,6 +1,7 @@
 {% extends 'index.html' %}
 <!-- ========================dashboard============================== -->
 {% block content %}
+{% load static %}
 <section class="dashboard-section">
 	<div class="dash-hero">
 		<h2 class="dash-title">Dashboard</h2>
@@ -30,17 +31,66 @@
 	</div>
 	<div class="graph">
 		<div class="earning-overview overview-card">
-			<div class="overview-head"><h4 class="overview">Earnings Overview</h4><span class="3dot"></span></div>
+			<div class="overview-head"><h4 class="overview">Earnings Overview</h4><span class="dots3"><i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i></span></div>
 			<div class="earning-graph">
 				<canvas class="line-chart"></canvas>
 			</div>
 		</div>
 		<div class="revenue-sources overview-card">
-			<div class="overview-head"><h4 class="overview">Revenuse Sources</h4><span class="3dot"></span></div>
+			<div class="overview-head"><h4 class="overview">Revenuse Sources</h4><span class="dots3"><i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i></span></div>
 			<div class="revenue-graph">
 				<canvas class="donut-chart"></canvas>
 			</div>
 		</div>
 	</div>
 </section>
+
+<!-- ====================================projects=========================================== -->
+
+<section class="ruby-cards">
+	<div class="projects">
+		<h2 class="title-ruby">Projects</h2>
+		<div class="progress-bar">
+			<p class="progress-head">Server Migrations</p><p class="percent">20%</p>
+			<progress id="file" value="32" max="100"> 20% </progress>
+		</div>
+		<div class="progress-bar">
+			<p class="progress-head">Sales Tracking</p><p class="percent">40%</p>
+			<progress id="file" value="40" max="100"> 40% </progress>
+		</div>
+		<div class="progress-bar">
+			<p class="progress-head">Customer Database</p><p class="percent">60%</p>
+			<progress id="file" value="60" max="100">60% </progress>
+		</div>
+		<div class="progress-bar">
+			<p class="progress-head">Payout Details</p><p class="percent">80%</p>
+			<progress id="file" value="80" max="100"> 80% </progress>
+		</div>
+		<div class="progress-bar">
+			<p class="progress-head">Account Setup</p><p class="percent">100%</p>
+			<progress id="file" value="100" max="100"> 100% </progress>
+		</div>
+	</div>
+	<div class="illustrations">
+		<h2 class="title-ruby">Illustrations</h2>
+		<img src="{% static 'svg/undraw_posting_photo.svg'%}" alt="illustrations" class="svg-illus">
+		<p class="text-illus">Add some quality, svg illustrations to your project courtesy of unDraw, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!</p>
+		<a href="https://undraw.co" class="link-illus">Browse Illustrations on unDraw</a>
+	</div>
+	<div class="colors-card">
+		<div class="color-card primary">Primary #4e73df</div>
+		<div class="color-card success">Success #1cc88a</div>
+		<div class="color-card info">Info #36b9cc</div>
+		<div class="color-card warning">Warning #f6c23e</div>
+		<div class="color-card danger">Danger #e74a3b</div>
+		<div class="color-card secondary">Secondary #858796</div>
+		<div class="color-card light">Light #f8f9fc</div>
+		<div class="color-card dark">Dark #5a5c69</div>
+	</div>
+	<div class="dev-approach">
+		<h2 class="title-ruby">Development Approach</h2>
+		<p class="aprch-desc">SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom components and custom utility classes. <br><br> Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.</p>
+	</div>
+</section>
+
 {% endblock %}
