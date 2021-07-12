@@ -9,24 +9,43 @@
 	</div>
 	<div class="dash-cards">
 		<div class="dash-card earnings-monthly">
-			<p class="card-title">Earnings (monthly)</p>
-			<H2 class="card-amount">$40,000</H2>
-			<span class="card-icon"></span>
+			<div class="dash-card-cont">
+				<p class="card-title">Earnings (monthly)</p>
+				<H3 class="card-amount">$40,000</H3>
+			</div>
+			<div class="dash-icon">
+				<span class="card-icon"><i class="fas fa-calendar fa-2x"></i></span>
+			</div>
 		</div>
 		<div class="dash-card earnings-annual">
-			<p class="card-title">earnings (annual)</p>
-			<H2 class="card-amount">$215,000</H2>
-			<span class="card-icon"></span>
+			<div class="dash-card-cont">
+				<p class="card-title">Earnings (annual)</p>
+				<H3 class="card-amount">$215,000</H3>
+			</div>
+			<div class="dash-icon">
+				<span class="card-icon"><i class="fas fa-dollar-sign fa-2x"></i></span>
+			</div>
 		</div>
 		<div class="dash-card tasks">
-			<p class="card-title">tasks</p>
-			<H2 class="card-amount">50%</H2>
-			<span class="card-icon"></span>
+			<div class="dash-card-cont">
+				<p class="card-title">tasks</p>
+				<div class="prog">
+					<H3 class="card-amount">50%</H3>				
+					<progress class="dash-prog payout" value="50" max="100"> 50% </progress>
+				</div>
+			</div>
+			<div class="dash-icon">
+				<span class="card-icon"><i class="fas fa-clipboard-list fa-2x"></i></span>
+			</div>
 		</div>
 		<div class="dash-card pending-req">
-			<p class="card-title">pending requests</p>
-			<H2 class="card-amount">18</H2>
-			<span class="card-icon"></span>
+			<div class="dash-card-cont">
+				<p class="card-title">pending requests</p>
+				<H3 class="card-amount">18</H3>
+			</div>
+			<div class="dash-icon">
+				<span class="card-icon"><i class="fas fa-comments fa-2x"></i></span>
+			</div>
 		</div>
 	</div>
 	<div class="graph">
@@ -48,49 +67,66 @@
 <!-- ====================================projects=========================================== -->
 
 <section class="ruby-cards">
-	<div class="projects">
+	<div class="projects-card ruby-card">
 		<h2 class="title-ruby">Projects</h2>
-		<div class="progress-bar">
-			<p class="progress-head">Server Migrations</p><p class="percent">20%</p>
-			<progress id="file" value="32" max="100"> 20% </progress>
-		</div>
-		<div class="progress-bar">
-			<p class="progress-head">Sales Tracking</p><p class="percent">40%</p>
-			<progress id="file" value="40" max="100"> 40% </progress>
-		</div>
-		<div class="progress-bar">
-			<p class="progress-head">Customer Database</p><p class="percent">60%</p>
-			<progress id="file" value="60" max="100">60% </progress>
-		</div>
-		<div class="progress-bar">
-			<p class="progress-head">Payout Details</p><p class="percent">80%</p>
-			<progress id="file" value="80" max="100"> 80% </progress>
-		</div>
-		<div class="progress-bar">
-			<p class="progress-head">Account Setup</p><p class="percent">100%</p>
-			<progress id="file" value="100" max="100"> 100% </progress>
+		<div class="progress-container">
+			<div class="progress-bar">
+				<div class="projects-title-container">
+					<p class="progress-head">Server Migrations</p><p class="percent">20%</p>
+				</div>
+				<progress class="server" id="file" value="32" max="100"> 20% </progress>
+			</div>
+			<div class="progress-bar">
+				<div class="projects-title-container">
+					<p class="progress-head">Sales Tracking</p><p class="percent">40%</p>
+				</div>
+				<progress class="sales" id="file" value="40" max="100"> 40% </progress>
+			</div>
+			<div class="progress-bar">
+				<div class="projects-title-container">
+					<p class="progress-head">Customer Database</p><p class="percent">60%</p>
+				</div>
+				<progress class="database" id="file" value="60" max="100">60% </progress>
+			</div>
+			<div class="progress-bar">
+				<div class="projects-title-container">
+					<p class="progress-head">Payout Details</p><p class="percent">80%</p>
+				</div>
+				<progress class="payout" id="file" value="80" max="100"> 80% </progress>
+			</div>
+			<div class="progress-bar">
+				<div class="projects-title-container">
+					<p class="progress-head">Account Setup</p><p class="percent">100%</p>
+				</div>
+				<progress class="account" id="file" value="100" max="100"> 100% </progress>
+			</div>
 		</div>
 	</div>
-	<div class="illustrations">
+	<div class="illustrations ruby-card">
 		<h2 class="title-ruby">Illustrations</h2>
-		<img src="{% static 'svg/undraw_posting_photo.svg'%}" alt="illustrations" class="svg-illus">
-		<p class="text-illus">Add some quality, svg illustrations to your project courtesy of unDraw, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!</p>
-		<a href="https://undraw.co" class="link-illus">Browse Illustrations on unDraw</a>
+		<div class="illus-container">
+			<img src="{% static 'svg/undraw_posting_photo.svg'%}" alt="illustrations" class="svg-illus">
+			<p class="text-illus">Add some quality, svg illustrations to your project courtesy of <a href="https://undraw.co" class="link-illus">unDraw</a>, a constantly updated collection of beautiful svg images that you can use completely free and without attribution!</p><br>
+			<a href="https://undraw.co" class="link-illus">Browse Illustrations on unDraw →</a>
+		</div>
 	</div>
-	<div class="colors-card">
-		<div class="color-card primary">Primary #4e73df</div>
-		<div class="color-card success">Success #1cc88a</div>
-		<div class="color-card info">Info #36b9cc</div>
-		<div class="color-card warning">Warning #f6c23e</div>
-		<div class="color-card danger">Danger #e74a3b</div>
-		<div class="color-card secondary">Secondary #858796</div>
-		<div class="color-card light">Light #f8f9fc</div>
-		<div class="color-card dark">Dark #5a5c69</div>
+	<div class="colors-card ruby-card">
+		<div class="color-card primary">Primary <br> #4e73df</div>
+		<div class="color-card success">Success <br> #1cc88a</div>
+		<div class="color-card info">Info <br> #36b9cc</div>
+		<div class="color-card warning">Warning <br> #f6c23e</div>
+		<div class="color-card danger">Danger <br> #e74a3b</div>
+		<div class="color-card secondary">Secondary <br> #858796</div>
+		<div class="color-card light">Light <br> #f8f9fc</div>
+		<div class="color-card dark">Dark <br> #5a5c69</div>
 	</div>
-	<div class="dev-approach">
-		<h2 class="title-ruby">Development Approach</h2>
-		<p class="aprch-desc">SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom components and custom utility classes. <br><br> Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.</p>
+	<div class="dev-approach ruby-card">
+		<div class="dev-content">
+			<h2 class="title-ruby">Development Approach</h2>
+			<p class="aprch-desc">SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce CSS bloat and poor page performance. Custom CSS classes are used to create custom components and custom utility classes. <br><br> Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.</p>
+		</div>
 	</div>
 </section>
+
 
 {% endblock %}

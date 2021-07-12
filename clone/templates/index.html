@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="{% static 'css/keyframes.css' %}">
 	<link rel="stylesheet" href="{% static 'css/utilities.css' %}">
 	<link rel="stylesheet" href="{% static 'css/dash.css' %}">
+	<link rel="stylesheet" href="{% static 'css/progressBar.css' %}">
 
 	<title>SB-Admin-Home</title>
 </head>
@@ -45,7 +46,7 @@
 						<span class="comp-icon"><i class="fas fa-fw fa-wrench"></i></span><h5 class="int-title">Utilities</h5><span class="i-angle-right"><i class="fas fa-angle-right"></i></span>
 					</div>
 					<div class="components icomponents">
-						<h5 class="comps">CUSTOM UTILITIES</h5>
+						<p class="comps">CUSTOM UTILITIES</>
 						<li class="links">Colors</li>
 						<li class="links">Borders</li>
 					</div>
@@ -74,7 +75,9 @@
 	{% block content %}
 	{% endblock  %}
 	<footer class="copyright">
-		<p class="copy">copyright &copy; Your Website <!--usedjango -->2021</p>
+		<div class="copy-container">
+			<p class="copy">copyright &copy; Your Website <!--usedjango -->2021</p>
+		</div>
 	</footer>
 	<!-- =================================custom js===================================== -->
 	<script src="{% static 'js/app.js' %}"></script>

@@ -3,6 +3,7 @@
 .dash-cont{
 	display: flex;
 }
+
 .dash-icon{
 	margin: auto .5rem;
 }
@@ -10,6 +11,33 @@
 	margin: auto 0;
 }
 
+.card-icon{
+	color: var(--secondary);
+	opacity: .5;
+}
+
+.dash-card-cont{
+	display: flex;
+	flex-direction: column;
+	color: var(--gray-dark);
+}
+
+.dash-card-cont>*{
+	margin: .2rem;
+}
+
+.prog{
+	display: flex;
+	align-items: center;
+}
+
+.dash-prog{
+	margin-left: .5rem;
+	border-radius: .5em;
+	height: .6rem;
+	border: none;
+	outline: none;
+}
 
 /*===================== dashboard================================= */
 
@@ -54,7 +82,7 @@
 
 .dash-card{
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
 	padding: 1.5rem 1rem;
 	margin: .5rem;
 	width: auto;
@@ -66,6 +94,8 @@
 	font-weight: 500;
 	font-size: .85rem;
 }
+
+.dash-cont
 
 .card-amount{
 	color: var(--dark);
@@ -154,7 +184,87 @@
 }
 
 /* ===============================ruby section================================ */
+
+.ruby-cards{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.ruby-card{
+	background: var(--light);
+	box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+	margin: .5rem;
+	color: var(--secondary);
+}
+
+.title-ruby{
+	color: var(--primary-color);
+	border-bottom: 1px solid rgba(78, 115, 223, .2);
+	padding: .5rem;
+}
+
+/* =================================projects================================== */
+
+.projects-title-container{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 .5rem;
+	margin: .5rem auto;
+}
+
+.progress-container{
+	padding: 1rem;
+}
+
+/* =========================illustrations======================================= */
+
+.illustrations{
+	height: 105%;
+}
+
+.illus-container{
+	padding: 1rem;
+}
+
 .svg-illus{
 	height: 10rem;
-	width: 30%;
+	width: 80%;
+}
+
+.link-illus{
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+/* ===============================colors card========================================= */
+
+.colors-card{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background: none;
+	box-shadow: none;
+}
+
+.colors-card .light{
+	color: var(--dark);
+}
+
+.color-card{
+	margin: 1rem;
+	height: 5rem;
+	width: auto;
+	color: var(--light);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: .25em;
+	box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+}
+
+.dev-approach{
+	margin-top: 2.5rem;
+}
+
+.dev-content{
+	padding: 1rem;
 }

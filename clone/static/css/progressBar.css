@@ -1,0 +1,73 @@
+#file{
+	border: none;
+	outline: none;
+	height: 1rem;
+	border-radius: .5rem;
+}
+
+#file::-moz-progress-bar{
+	border-radius: .5rem;
+}
+
+.server::-moz-progress-bar{
+	background: var(--danger);
+	border-radius: .5rem;
+}
+.sales::-moz-progress-bar{
+	background: var(--warning);
+	border-radius: .5rem;
+}
+.database::-moz-progress-bar{
+	background: var(--primary-color);
+	border-radius: .5rem;
+}
+.payout::-moz-progress-bar{
+	background: var(--info);
+	border-radius: .5rem;
+}
+.account::-moz-progress-bar{
+	background: var(--success);
+	border-radius: .5rem;
+}
+
+.server::-webkit-progress-bar{
+	background: var(--danger);
+	border-radius: .5rem;
+}
+.sales::-webkit-progress-bar{
+	background: var(--warning);
+	border-radius: .5rem;
+}
+.database::-webkit-progress-bar{
+	background: var(--primary-color);
+	border-radius: .5rem;
+}
+.payout::-webkit-progress-bar{
+	background: var(--info);
+	border-radius: .5rem;
+}
+.account::-webkit-progress-bar{
+	background: var(--success);
+	border-radius: .5rem;
+}
+
+.server::-webkit-progress-value{
+	background: var(--danger);
+	border-radius: .5rem;
+}
+.sales::-webkit-progress-value{
+	background: var(--warning);
+	border-radius: .5rem;
+}
+.database::-webkit-progress-value{
+	background: var(--primary-color);
+	border-radius: .5rem;
+}
+.payout::-webkit-progress-value{
+	background: var(--info);
+	border-radius: .5rem;
+}
+.account::-webkit-progress-value{
+	background: var(--success);
+	border-radius: .5rem;
+}

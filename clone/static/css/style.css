@@ -37,6 +37,7 @@
 
 body{
 	background: var(--light);
+	position: relative;
 }
 
 hr{
@@ -115,12 +116,17 @@ li{
 }
 
 .rotate-down{
-	transition: .2s ease all;
+	transition: .2s;
 	animation: rotate-down .2s forwards;
 }
 
 .fa-angle-right{
 	cursor: pointer;
+}
+
+.comps{
+	font-size: .6rem;
+	color: var(--secondary);
 }
 
 
@@ -132,7 +138,7 @@ li{
 	opacity: 0;
 	height: 0;
 	margin: 1rem;
-	transition: .1s ease-out;
+	transition: .2s;
 }
 
 .show-comp{
@@ -251,5 +257,13 @@ li{
 }
 .username{
 	font-size: 13px;
+	color: var(--secondary);
+}
+
+.copyright{
+	position: absolute;
+	left: 55%;
+	transform: translateX(-45%);
+	bottom: -5rem;
 	color: var(--secondary);
 }
