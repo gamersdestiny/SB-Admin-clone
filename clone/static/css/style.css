@@ -153,6 +153,11 @@ li{
 	margin: .5rem 0;
 }
 
+.links{
+	color: var(--dark-400);
+	text-decoration: none;
+}
+
 /* ================toggle================ */
 
 .toggle-cont{
@@ -259,6 +264,8 @@ li{
 	font-size: 13px;
 	color: var(--secondary);
 }
+
+/* =====================================footer=============================== */
 
 .copyright{
 	position: absolute;
