@@ -163,13 +163,34 @@
 	width: 100%;
 }
 
-.graph{
-	display: flex;
-}
-
 .earning-overview{
 	width: 65%;
 	height: 20rem;
+	position: relative;
+}
+
+.overview-options{
+	border-radius: .25em;
+	padding: 1rem;
+	font-size: .6rem;
+	background: var(--white);
+	z-index: 10;
+	position: absolute;
+	right: 2rem;
+	top: 2.5rem;
+	display: none;
+}
+
+.show{
+	display: block;
+}
+
+.overview-options>*{
+	margin: .5rem 0;
+}
+
+.graph{
+	display: flex;
 }
 
 .line-chart{
@@ -179,6 +200,7 @@
 
 .revenue-sources{
 	width: 35%;
+	position: relative;
 }
 
 .revenue-graph{

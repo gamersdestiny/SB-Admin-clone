@@ -5,7 +5,6 @@ const icomponents = document.querySelector('.icomponents');
 const cContainer = document.querySelector('.cc-container');
 const uContainer = document.querySelector('.uc-container');
 
-
 var arwCount = 0;
 
 cContainer.addEventListener('click', (e)=>{
@@ -47,4 +46,48 @@ uContainer.addEventListener('click', (e)=>{
 		iArwCount--;
 	}
 });
+
+// overview options
+
+const dots = document.querySelector('.dots3');
+const eOverview = document.querySelector('.e-overview');
+var dotClicks = 0;
+
+dots.addEventListener('click', (e)=>{
+	if (dotClicks %2==0){
+		eOverview.classList.add('show');
+		if (dotClicks1>0){
+			rOverview.classList.remove('show');
+			dotClicks1--;
+		}
+		dotClicks++;
+	} else {
+		eOverview.classList.remove('show');
+		dotClicks--;
+	}
+});
+
+const dots1 = document.querySelector('.dots4');
+const rOverview = document.querySelector('.r-overview');
+var dotClicks1 = 0;
+
+dots1.addEventListener('click', (e)=>{
+	if (dotClicks1 %2==0){
+		rOverview.classList.add('show');
+		if (dotClicks>0){
+			eOverview.classList.remove('show');
+			dotClicks--;
+		}
+		dotClicks1++;
+	} else {
+		rOverview.classList.remove('show');
+		dotClicks1--;
+	}
+});
+
+
+
+
+
+
 
