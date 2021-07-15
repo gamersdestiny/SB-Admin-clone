@@ -26,6 +26,7 @@
     --danger: #e74a3b;
     --light: #f8f9fc;
     --dark: #5a5c69;
+	--code-color: #e83e8c;
 }
 
 *{
@@ -51,17 +52,21 @@ li{
 	list-style: none;
 }
 /* ==================================navbar==================================================== */
+
 .navbar-section{
-	display: flex;
-	flex-direction: column;
 	float: left;
 	width: 14rem;
-	height: 200vh;
+	min-height: 200vh;
 	background: #4e73df;
+	background-color: #4e73df;
+	background-image: linear-gradient(180deg,#4e73df 10%,#224abe 100%);
+	background-size: cover;
 	position: relative;
 }
 
 .navbar{
+	display: flex;
+	flex-direction: column;
 	align-self: center;
 	color: white;
 	width: 90%;
@@ -271,6 +276,6 @@ li{
 	position: absolute;
 	left: 55%;
 	transform: translateX(-45%);
-	bottom: -5rem;
+	top: 195vh;
 	color: var(--secondary);
 }

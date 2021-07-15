@@ -1,0 +1,134 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block 'css' %}
+	<link rel="stylesheet" href="{% static 'css/buttons.css' %}">
+{% endblock %}
+
+{% block 'title' %}
+	<title>Buttons - SB - Admin</title>	
+{% endblock %}
+
+{% block content %}
+
+<section class="buttons-container">
+	<div class="card-wrapper">
+		<div class="circle-buttons ruby-card">
+			<div class="cont-top">
+				<h4 class="title-ruby">Circle Buttons</h4>
+			</div>
+			<div class="cb-content">
+				<p class="cb-text">
+					Use Font Awesome Icons (included with this theme package) along with the circle buttons as shown in the examples below!
+				</p>
+				<div class="btn-circle-cont">
+					<div class="btn-circle-title">
+						<code>.btn-circle</code>
+					</div>
+					<div class="btn-circle-btns">
+						<a href="#" class="btn-circle primary"><i class="fab fa-facebook-f"></i></a>
+						<a href="#" class="btn-circle success"><i class="fas fa-check"></i></a>
+						<a href="#" class="btn-circle info"><i class="fas fa-info-circle"></i></a>
+						<a href="#" class="btn-circle warning"><i class="fas fa-exclamation-triangle"></i></a>
+						<a href="#" class="btn-circle danger"><i class="fas fa-trash"></i></a>
+					</div>
+				</div>
+				<div class="btn-circle-cont">
+					<div class="btn-circle-title">
+						<code>.btn-circle .btn-sm</code>
+					</div>
+						<div class="btn-circle-btns">
+							<a href="#" class="btn-circle btn-sm primary"><i class="fab fa-facebook-f"></i></a>
+							<a href="#" class="btn-circle btn-sm success"><i class="fas fa-check"></i></a>
+							<a href="#" class="btn-circle btn-sm info"><i class="fas fa-info-circle"></i></a>
+							<a href="#" class="btn-circle btn-sm warning"><i class="fas fa-exclamation-triangle"></i></a>
+							<a href="#" class="btn-circle btn-sm danger"><i class="fas fa-trash"></i></a>
+						</div>
+				</div>
+				<div class="btn-circle-cont">
+					<div class="btn-circle-title">
+						<code>.btn-circle .btn-lg</code>
+					</div>
+					<div class="btn-circle-btns">
+						<a href="#" class="btn-circle btn-lg primary"><i class="fab fa-facebook-f"></i></a>
+						<a href="#" class="btn-circle btn-lg success"><i class="fas fa-check"></i></a>
+						<a href="#" class="btn-circle btn-lg info"><i class="fas fa-info-circle"></i></a>
+						<a href="#" class="btn-circle btn-lg warning"><i class="fas fa-exclamation-triangle"></i></a>
+						<a href="#" class="btn-circle btn-lg danger"><i class="fas fa-trash"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="brand-buttons ruby-card">
+			<div class="cont-top">
+				<h5 class="title-ruby">Brand Buttons</h5>
+			</div>
+			<div class="bb-content">
+				<p class="cb-text">
+					Google and Facebook buttons are available featuring each company's respective brand color. They are used on the user login and registration pages.
+					<br><br>
+					You can create more custom buttons by adding a new color variable in the <code>_variables.scss</code> file and then using the Bootstrap button variant mixin to create a new style, as demonstrated in <code>the _buttons.scss file.</code>
+				</p>
+				<div class="brand-btn-container">
+					<a href="#" class="brand-btn danger"><i class="fab fa-google fa-fw"></i> .btn-google</a>
+					<a href="#" class="brand-btn primary"><i class="fab fa-facebook-f fa-fw"></i> .btn-google</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="card-wrapper">
+		<div class="split-buttons ruby-card">
+			<div class="cont-top">
+				<h5 class="title-ruby">Split Buttons</h5>
+			</div>
+			<div class="bb-content">
+				<p class="cb-text">
+					Works with any button colors, just use the <code>.btn-icon-split</code> class and the markup in the examples below. The examples below also use the <code>.text-white-50</code> helper class on the icons for additional styling, but it is not required.
+				</p>
+				<div class="sp-container primary">
+					<a href="#" class="split-btn primary split-icon"><i class="fas fa-flag"></i></a>
+					<p class="sp-text">Split Button Primary</p>
+				</div>
+				<div class="sp-container success">
+					<a href="#" class="split-btn success split-icon"><i class="fas fa-check"></i></a>
+					<p class="sp-text">Split Button Success</p>
+				</div>
+				<div class="sp-container info">
+					<a href="#" class="split-btn info split-icon"><i class="fas fa-info-circle"></i></a>
+					<p class="sp-text">Split Button Info</p>
+				</div>
+				<div class="sp-container warning">
+					<a href="#" class="split-btn warning split-icon"><i class="fas fa-exclamation-triangle"></i></a>
+					<p class="sp-text">Split Button Warning</p>
+				</div>
+				<div class="sp-container danger">
+					<a href="#" class="split-btn danger split-icon"><i class="fas fa-trash"></i></a>
+					<p class="sp-text">Split Button Danger</p>
+				</div>
+				<div class="sp-container secondary">
+					<a href="#" class="split-btn secondary split-icon"><i class="fas fa-arrow-right"></i></a>
+					<p class="sp-text">Split Button Secondary</p>
+				</div>
+				<div class="sp-container light">
+					<a href="#" class="split-btn light split-icon"><i class="fas fa-arrow-right"></i></a>
+					<p class="sp-text">Split Button Light</p>
+				</div>
+			</div>
+				<div class="bb-content">
+					<p class="cb-text">
+						Also works with small and large button classes!
+					</p>
+					<div class="sp-container primary split-btn-sm">
+						<a href="#" class="split-btn split-icon primary"><i class="fas fa-flag"></i></a>
+						<p class="sp-text">Split Button Primary</p>
+					</div>
+					<div class="sp-container primary split-btn-lg">
+						<a href="#" class="split-btn split-icon primary"><i class="fas fa-flag"></i></a>
+						<p class="sp-text">Split Button Primary</p>
+					</div>
+				</div>
+			</div>
+	</div>		
+</section>
+
+{% endblock %}

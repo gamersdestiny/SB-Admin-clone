@@ -22,31 +22,114 @@
 
 .primary{
 	background: #4e73df;
+	color: var(--white);
 }
 
 .success{
 	background: #1cc88a;
+	color: var(--white);
 }
 .info{
 	background: #36b9cc;
+	color: var(--white);
 }
 .warning{
 	background: #f6c23e;
+	color: var(--white);
 }
 .danger{
 	background: #e74a3b;
+	color: var(--white);
 }
 .secondary{
 	background: #858796;
+	color: var(--white);
 }
 .light{
 	background: #f8f9fc;
+	color: var(--secondary);
 }
 .dark{
 	background: #5a5c69;
+	color: var(--white);
 }
 
 .shadow{
 	box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
 }
 
+.btn-circle{
+	border-radius: 100%;
+	height: 2.5rem;
+	width: 2.5rem;
+	font-size: 1rem;
+	margin: .3rem .05rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+.btn-sm{
+	font-size: .7rem;
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+.btn-lg{
+	font-size: 2rem;
+	height: 3.5rem;
+	width: 3.5rem;
+}
+
+.btn-circle-cont{
+	margin: 2rem auto;
+}
+
+.brand-btn{
+	text-decoration: none;
+	width: 100%;
+	padding: .5rem 1rem;
+	border-radius: .25em;
+}
+
+/* =========================split-btn========================== */
+.sp-container{
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	border-radius: .25em;
+	width: max-content;
+}
+
+.sp-container>*{
+	padding: .5em;
+}
+
+.split-btn{
+	margin-right: .1rem;
+	border-top-left-radius: .25em;
+	border-bottom-left-radius: .25em;
+	/* padding: .5rem; */
+}
+
+.sp-text{
+	margin: 0 .5rem;
+}
+
+.split-icon{
+	background: rgba(0, 0, 0, .2);
+}
+
+.split-btn-sm{
+	font-size: .7rem;
+}
+
+.split-btn-lg{
+	font-size: 1.3rem;
+}
+
+code{
+	color: var(--code-color);
+	font-size: .85rem;
+}

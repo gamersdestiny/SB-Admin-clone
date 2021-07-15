@@ -1,7 +1,12 @@
 {% extends 'index.html' %}
 <!-- ========================dashboard============================== -->
-{% block content %}
 {% load static %}
+{% block 'title' %}
+<title>SB - Admin - Home</title>	
+{% endblock %}
+
+
+{% block content %}
 <section class="dashboard-section">
 	<div class="dash-hero">
 		<h2 class="dash-title">Dashboard</h2>
@@ -148,5 +153,8 @@
 	</div>
 </section>
 
+{% endblock %}
 
+{% block 'jsblock' %}
+	<script src="{% static 'js/chart.js' %}"></script>
 {% endblock %}

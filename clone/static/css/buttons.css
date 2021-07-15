@@ -1,0 +1,35 @@
+.buttons-container{
+	display: flex;
+}
+
+.circle-buttons, .brand-buttons, .split-buttons{
+	margin: .5rem;
+	padding: 1rem;
+}
+
+.btn-circle-cont{
+	display: flex;
+	flex-direction: column;
+}
+
+.brand-btn-container{
+	display: flex;
+	flex-direction: column;
+}
+.brand-btn{
+	display: inline-flex;
+	justify-content: center;
+	width: 100%;
+	margin: .5rem auto;
+}
+
+/* =======================================plit buttons===================================== */
+
+.split-buttons>*{
+	margin: 1rem 0;
+}
+
+.bb-content>*{
+	margin: 1rem 0;
+}
+

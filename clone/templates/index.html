@@ -16,8 +16,12 @@
 	<link rel="stylesheet" href="{% static 'css/utilities.css' %}">
 	<link rel="stylesheet" href="{% static 'css/dash.css' %}">
 	<link rel="stylesheet" href="{% static 'css/progressBar.css' %}">
-
-	<title>SB-Admin-Home</title>
+	{% block 'css' %}
+	
+	{% endblock %}
+	{% block 'title' %}
+	
+	{% endblock %}
 </head>
 <body>
 	<!-- ===========================navbar===================================== -->
@@ -72,8 +76,10 @@
 			<img src="{% static 'svg/undraw_profile.svg' %}" class="top-profile" alt="">
 		</div>
 	</div>
-	{% block content %}
-	{% endblock  %}
+	<div class="wrapper">
+		{% block content %}
+		{% endblock  %}
+	</div>
 	<footer class="copyright">
 		<div class="copy-container">
 			<p class="copy">copyright &copy; Your Website <!--usedjango -->2021</p>
@@ -81,6 +87,7 @@
 	</footer>
 	<!-- =================================custom js===================================== -->
 	<script src="{% static 'js/app.js' %}"></script>
-	<script src="{% static 'js/chart.js' %}"></script>
+	{% block 'jsblock' %}
+	{% endblock %}
 </body>
 </html>
