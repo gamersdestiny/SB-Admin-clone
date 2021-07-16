@@ -39,6 +39,7 @@
 body{
 	background: var(--light);
 	position: relative;
+	color: var(--dark);
 }
 
 hr{
@@ -194,6 +195,7 @@ li{
 	grid-template-columns: 5fr 1fr;
 	padding: .2rem;
 	box-shadow: 1px 1px 10px var(--gray-dark);
+	margin-left: -2rem;
 }
 
 .nav-left{
@@ -215,7 +217,7 @@ li{
 	outline: none;
 	border-radius: .3rem;
 	padding: 1rem;
-	width: 30%;
+	width: 75%;
 }
 .top-search:focus{
 	border: 1px solid var(--light-accent);
@@ -276,6 +278,11 @@ li{
 	position: absolute;
 	left: 55%;
 	transform: translateX(-45%);
-	top: 195vh;
+	top: 99%;
 	color: var(--secondary);
+}
+
+
+.wrapper{
+	margin: 0 .5rem;
 }

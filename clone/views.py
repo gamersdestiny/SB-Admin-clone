@@ -8,3 +8,10 @@ def buttons(request):
 
 def cards(request):
 	return render(request, 'cards.html')
+
+def colors(request):
+	return render(request, 'colors.html')
+
+def borders(request):
+	return render(request, 'borders.html')
+	

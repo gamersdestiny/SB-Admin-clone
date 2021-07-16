@@ -288,6 +288,7 @@
 .dev-approach{
 	margin-top: 2.5rem;
 	height: max-content;
+	position: relative;
 }
 
 .dev-content{

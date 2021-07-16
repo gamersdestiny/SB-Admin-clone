@@ -4,7 +4,15 @@ const components = document.querySelector('.components');
 const icomponents = document.querySelector('.icomponents');
 const cContainer = document.querySelector('.cc-container');
 const uContainer = document.querySelector('.uc-container');
+const iArrowRight = document.querySelector('.i-angle-right');
+const dots = document.querySelector('.dots3');
+const eOverview = document.querySelector('.e-overview');
+const dots1 = document.querySelector('.dots4');
+const rOverview = document.querySelector('.r-overview');
 
+var dotClicks1 = 0;
+var dotClicks = 0;
+var iArwCount = 0;
 var arwCount = 0;
 
 cContainer.addEventListener('click', (e)=>{
@@ -26,9 +34,6 @@ cContainer.addEventListener('click', (e)=>{
 });
 
 // u arrow
-const iArrowRight = document.querySelector('.i-angle-right');
-var iArwCount = 0;
-
 uContainer.addEventListener('click', (e)=>{
 	if (iArwCount%2==0){
 		iArrowRight.classList.add('rotate-down');
@@ -49,10 +54,6 @@ uContainer.addEventListener('click', (e)=>{
 
 // overview options
 
-const dots = document.querySelector('.dots3');
-const eOverview = document.querySelector('.e-overview');
-var dotClicks = 0;
-
 dots.addEventListener('click', (e)=>{
 	if (dotClicks %2==0){
 		eOverview.classList.add('show');
@@ -67,10 +68,6 @@ dots.addEventListener('click', (e)=>{
 	}
 });
 
-const dots1 = document.querySelector('.dots4');
-const rOverview = document.querySelector('.r-overview');
-var dotClicks1 = 0;
-
 dots1.addEventListener('click', (e)=>{
 	if (dotClicks1 %2==0){
 		rOverview.classList.add('show');
@@ -84,6 +81,7 @@ dots1.addEventListener('click', (e)=>{
 		dotClicks1--;
 	}
 });
+
 
 
 

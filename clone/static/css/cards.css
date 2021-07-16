@@ -1,0 +1,27 @@
+.cards-wrapper{
+	display: flex;
+}
+.default-title{
+	color: var(--secondary);
+	border-bottom: 1px solid rgba(78, 115, 223, .2);
+	padding: .5rem;
+}
+
+.d-arrow{
+	margin-right: 1rem;
+	color: var(--secondary);
+}
+
+.overview-head{
+	cursor: pointer;
+}
+
+/* collapse */
+
+.cs-content{
+	display: none;
+}
+
+.expand{
+	display: block	;
+}
