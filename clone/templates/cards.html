@@ -1,0 +1,113 @@
+{% extends 'index.html' %}
+
+{% load static %}
+
+{% block 'css' %}
+	<link rel="stylesheet" href="{% static 'css/cards.css' %}">
+{% endblock %}
+
+{% block 'title' %}
+<title>cards - sb - admin</title>
+{% endblock %}
+
+{% block content %}
+
+	<div class="title">
+		<h2 class="title-text">Cards</h2>
+	</div>
+
+		<div class="dash-cards">
+			<div class="dash-card earnings-monthly">
+				<div class="dash-card-cont">
+					<p class="card-title">Earnings (monthly)</p>
+					<H3 class="card-amount">$40,000</H3>
+				</div>
+				<div class="dash-icon">
+					<span class="card-icon"><i class="fas fa-calendar fa-2x"></i></span>
+				</div>
+			</div>
+			<div class="dash-card earnings-annual">
+				<div class="dash-card-cont">
+					<p class="card-title">Earnings (annual)</p>
+					<H3 class="card-amount">$215,000</H3>
+				</div>
+				<div class="dash-icon">
+					<span class="card-icon"><i class="fas fa-dollar-sign fa-2x"></i></span>
+				</div>
+			</div>
+			<div class="dash-card tasks">
+				<div class="dash-card-cont">
+					<p class="card-title">tasks</p>
+					<div class="prog">
+						<H3 class="card-amount">50%</H3>				
+						<progress class="dash-prog payout" value="50" max="100"> 50% </progress>
+					</div>
+				</div>
+				<div class="dash-icon">
+					<span class="card-icon"><i class="fas fa-clipboard-list fa-2x"></i></span>
+				</div>
+			</div>
+			<div class="dash-card pending-req">
+				<div class="dash-card-cont">
+					<p class="card-title">pending requests</p>
+					<H3 class="card-amount">18</H3>
+				</div>
+				<div class="dash-icon">
+					<span class="card-icon"><i class="fas fa-comments fa-2x"></i></span>
+				</div>
+			</div>
+		</div>
+	
+		<div class="cards-wrapper">
+			<div class="card-wrapper1">
+				<div class="dev-approach ruby-card">
+					<h5 class="default-title">Default Card Example</h5>
+					<div class="dev-content">
+						<p class="aprch-desc">This card uses Bootstrap's default styling with no utility classes added. Global styles are the only things modifying the look and feel of this default card example.</p>
+					</div>
+				</div>
+				<div class="dev-approach ruby-card">
+					<div class="e-overview overview-options shadow">
+						<p class="comps">DROPDOWN HEADER</p>
+						<a href="/colors" class="links">Action</a><br>
+						<a href="/borders" class="links">Another action</a>
+						<hr>
+						<a href="/borders" class="links">Something else here</a>
+					</div>	
+					<div class="overview-head">
+						<h5 class="overview">Dropdown Card Example</h5>
+						<span class="dots3">
+							<i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+						</span>
+					</div>
+					<div class="dev-content">
+						<p class="aprch-desc">Dropdown menus can be placed in the card header in order to extend the functionality of a basic card. In this dropdown card example, the Font Awesome vertical ellipsis icon in the card header can be clicked on in order to toggle a dropdown menu. </p>
+					</div>
+				</div>
+			</div>
+			<div class="card-wrapper2">
+				<div class="dev-approach ruby-card">
+					<h5 class="title-ruby">Basic Card Example</h5>
+					<div class="dev-content">
+						<p class="aprch-desc">The styling for this basic card example is created by using default Bootstrap utility classes. By using utility classes, the style of the card component can be easily modified with no need for any custom CSS! </p>
+					</div>
+				</div>
+				
+				<div class="dev-approach ruby-card">
+					<div class="overview-head cs-container">
+						<h5 class="overview">Collapsable Card Example</h5>
+						<span class="d-arrow cs-icon">
+							<i class="fas fa-chevron-right"></i>
+						</span>
+					</div>
+					<div class="dev-content cs-content">
+						<p class="aprch-desc">This is a collapsable card example using Bootstrap's built in collapse functionality. Click on the card header to see the card body collapse and expand! </p>
+					</div>
+				</div>
+			</div>
+		</div>
+{% endblock %}
+
+{% block 'jsblock' %}
+<script src="{% static 'js/cards.js' %}"></script>
+{% endblock %}

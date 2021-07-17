@@ -15,69 +15,85 @@
 	<link rel="stylesheet" href="{% static 'css/keyframes.css' %}">
 	<link rel="stylesheet" href="{% static 'css/utilities.css' %}">
 	<link rel="stylesheet" href="{% static 'css/dash.css' %}">
-
-	<title>SB-Admin-Home</title>
+	<link rel="stylesheet" href="{% static 'css/progressBar.css' %}">
+	<link rel="stylesheet" href="{% static 'css/tab.css' %}">
+	{% block 'css' %}
+	
+	{% endblock %}
+	{% block 'title' %}
+	
+	{% endblock %}
 </head>
 <body>
 	<!-- ===========================navbar===================================== -->
-	<section class="navbar-section">
-		<nav class="navbar">
-			<div class="logo-cont">
-				<span class="lg-icon"><i class="fas fa-2x fa-laugh-wink"></i></span><h4 class="logo">SB ADMIN <sup>2</sup></h4>
-			</div>
-			<hr>
-			<div class="dash-cont">
-				<span class="dash-icon"><i class="icon-dashboard"></i></span><h5 class="dash">Dashboard</h5>
-			</div>
-			<hr>
-			<ul class="interface">
-				<h5 class="int-title uppercase">Interface</h5>
-				<div class="components-cont cc-container ">
-					<span class="comp-icon"><i class="fas fa-fw fa-cog"></i></span><h5 class="int-title">Components</h5><span class="c-angle-right"><i class="fas fa-angle-right"></i></span>
+	<div class="main-wrapper">
+		<section class="navbar-section">
+			<nav class="navbar">
+				<div class="logo-cont">
+					<span class="lg-icon"><i class="fas fa-2x fa-laugh-wink"></i></span><h4 class="logo">SB ADMIN <sup>2</sup></h4>
 				</div>
-					<div class="components">
-						<h5 class="comps">CUSTOM COMPONENTS</h5>
-						<li class="links">Buttons</li>
-						<li class="links">Cards</li>
+				<hr>
+				<a href="/" class="components-cont">
+					<span class="dash-icon">
+						<i class="icon-dashboard"></i>
+					</span>
+					<h5 class="dash">Dashboard</h5>
+				</a>
+				<hr>
+				<ul class="interface">
+					<h5 class="int-title uppercase ml-2">Interface</h5>
+					<div class="components-cont cc-container ">
+						<span class="comp-icon"><i class="fas fa-fw fa-cog"></i></span><h5 class="int-title">Components</h5><span class="c-angle-right"><i class="fas fa-angle-right"></i></span>
 					</div>
-				<div class="utilities">
-					<div class="components-cont uc-container">
-						<span class="comp-icon"><i class="fas fa-fw fa-wrench"></i></span><h5 class="int-title">Utilities</h5><span class="i-angle-right"><i class="fas fa-angle-right"></i></span>
+						<div class="components">
+							<h5 class="comps">CUSTOM COMPONENTS</h5>
+							<a href="/buttons" class="links">Buttons</a><br>
+							<a href="/cards" class="links">Cards</a>
+						</div>
+					<div class="utilities">
+						<div class="components-cont uc-container">
+							<span class="comp-icon"><i class="fas fa-fw fa-wrench"></i></span><h5 class="int-title">Utilities</h5><span class="i-angle-right"><i class="fas fa-angle-right"></i></span>
+						</div>
+						<div class="components icomponents">
+							<p class="comps">CUSTOM UTILITIES</p>
+							<a href="/colors" class="links">Colors</a><br>
+							<a href="/borders" class="links">Borders</a>
+						</div>
 					</div>
-					<div class="components icomponents">
-						<h5 class="comps">CUSTOM UTILITIES</h5>
-						<li class="links">Colors</li>
-						<li class="links">Borders</li>
-					</div>
+				</ul>
+				<hr>
+				<div class="toggle-cont">
+					<div class="round-toggle"><span><i class="fas fa-angle-left"></i></span></div>
 				</div>
-			</ul>
-			<hr>
-			<div class="toggle-cont">
-				<div class="round-toggle"><span><i class="fas fa-angle-left"></i></span></div>
-			</div>
-		</nav>
-	</section>
-<!-- ==========================topnav============================= -->
-	<div class="topnav">
-		<div class="nav-left">
-			<input type="search" name="top-search" class="top-search" placeholder="search for...">
-			<span class="icon-search"></span>
-		</div>
-		<div class="nav-right">
-			<div class="notification"><i class="fas fa-bell fa-fw"></i><span class="noms">9<sup>+</sup></span></div>
-			<div class="message"><i class="fas fa-envelope fa-fw"></i><span class="noms">9<sup>+</sup></span></div>
-			<div class="divider"></div>
-			<p class="username">Guna</p>
-			<img src="{% static 'svg/undraw_profile.svg' %}" class="top-profile" alt="">
+			</nav>
+		</section>
+		<!-- ==========================topnav============================= -->
+		<div class="wrapper">
+			<div class="topnav">
+				<div class="nav-left">
+					<input type="search" name="top-search" class="top-search" placeholder="search for...">
+					<span class="icon-search"></span>
+				</div>
+				<div class="nav-right">
+					<div class="notification"><i class="fas fa-bell fa-fw"></i><span class="noms">9<sup>+</sup></span></div>
+					<div class="message"><i class="fas fa-envelope fa-fw"></i><span class="noms">9<sup>+</sup></span></div>
+					<div class="divider"></div>
+					<p class="username">Guna</p>
+					<img src="{% static 'svg/undraw_profile.svg' %}" class="top-profile" alt="">
+				</div>
+			</div>			
+			{% block content %}
+			{% endblock  %}
 		</div>
 	</div>
-	{% block content %}
-	{% endblock  %}
 	<footer class="copyright">
-		<p class="copy">copyright &copy; Your Website <!--usedjango -->2021</p>
+		<div class="copy-container">
+			<p class="copy">copyright &copy; Your Website <!--usedjango -->2021</p>
+		</div>
 	</footer>
 	<!-- =================================custom js===================================== -->
 	<script src="{% static 'js/app.js' %}"></script>
-	<script src="{% static 'js/chart.js' %}"></script>
+	{% block 'jsblock' %}
+	{% endblock %}
 </body>
 </html>
