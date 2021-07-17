@@ -45,7 +45,6 @@
 
 .dashboard-section{
 	padding: 1rem;
-	padding-left: 15rem;
 }
 
 .dash-title{
@@ -194,7 +193,7 @@
 }
 
 .line-chart{
-	width: 100%;
+	width: 65%;
 	height: 17rem;
 }
 
@@ -210,8 +209,8 @@
 /* ===============================ruby section================================ */
 
 .ruby-cards{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	margin-bottom: 1.5rem;
 }
 
 .ruby-card{
@@ -241,10 +240,6 @@
 }
 
 /* =========================illustrations======================================= */
-
-.illustrations{
-	height: 105%;
-}
 
 .illus-container{
 	padding: 1rem;

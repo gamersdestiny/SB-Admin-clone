@@ -35,5 +35,69 @@
 	}
 }
 
+/* tab mini pro */
+
+@media screen and (max-width:450px) {
+	.navbar-section{
+		display: none;
+	}
+
+	.dash-hero{
+		flex-direction: column;
+		width: 10rem;
+	}
+	.dash-title{
+		margin-bottom: .5rem;
+	}
+
+	.ruby-cards{
+		flex-direction: column;
+	}
+
+	.top-search{
+		display: none;
+	}
+
+	.nav-left{
+		margin: auto;
+	}
+
+	.icon-search{
+		color: gray;
+		background: none;
+	}
+
+	.dashboard-section{
+		padding: 0;
+	}
+
+	.ruby-card{
+		margin: 0;
+	}
+	.ruby-card>*{
+		margin: 0.5rem 0;
+	}
 
 
+	.cards-wrapper{
+		flex-direction: column;
+	}
+
+
+	.row{
+		flex-direction: column;
+	}
+
+	.col-lg-4{
+		max-width: 100%;
+		flex: auto;
+	}
+
+	.col-lg-6{
+		max-width: 100%;
+	}
+
+	.copyright{
+		font-size: 12px;
+	}
+}

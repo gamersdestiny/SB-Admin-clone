@@ -1,11 +1,15 @@
+
+.title-text{
+	margin-left: .5rem;
+}
+
 .buttons-container{
 	display: flex;
 }
 
-.circle-buttons, .brand-buttons, .split-buttons{
+/* .circle-buttons, .brand-buttons, .split-buttons{
 	margin: .5rem;
-	padding: 1rem;
-}
+} */
 
 .btn-circle-cont{
 	display: flex;
@@ -30,6 +34,6 @@
 }
 
 .bb-content>*{
-	margin: 1rem 0;
+	margin: 1rem .5rem;
 }
 

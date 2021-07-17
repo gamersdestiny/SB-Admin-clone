@@ -351,7 +351,6 @@ code{
 
 .colors-heading{
 	padding: .5rem;
-	margin-left: 13.5rem;
 	margin-top: 1rem;
 }
 
@@ -436,9 +435,22 @@ code{
 .border-bottom-dark {
     border-bottom: .25rem solid #5a5c69 !important;
 }
+.ml-2{
+    margin-left: .7rem;
+    margin-bottom: 1rem;
+}
 
 .title{
 	color: var(--secondary);
 	margin: 1rem auto ;
-	margin-left: 14rem;
+}
+
+.rotate-180{
+	transform: rotate(180deg);
+}
+
+.center{
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
