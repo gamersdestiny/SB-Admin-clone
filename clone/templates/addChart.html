@@ -1,0 +1,35 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block 'css' %}
+
+{% endblock %}
+
+{% block 'title' %}
+	<title>Add - chart - SB - Admin</title>	
+{% endblock %}
+
+{% block content %}
+<form action="" class="line-chart-form">
+	{% csrf_token %}
+	<h4 class="form-title text-primary">line chart</h4>
+	<div class="input-wrapper">
+		jan -><input type="number" name="jan" class="chart-input" placeholder="jan" id="">
+		feb -><input type="number" name="feb" class="chart-input" placeholder="feb" id="">
+		mar -><input type="number" name="mar" class="chart-input" placeholder="mar" id="">
+		apr -><input type="number" name="apr" class="chart-input" placeholder="apr" id="">
+		may -><input type="number" name="may" class="chart-input" placeholder="may" id="">
+		jun -><input type="number" name="jun" class="chart-input" placeholder="jun" id="">
+		jul -><input type="number" name="jul" class="chart-input" placeholder="jul" id="">
+		aug -><input type="number" name="aug" class="chart-input" placeholder="aug" id="">
+		sep -><input type="number" name="sep" class="chart-input" placeholder="sep" id="">
+		oct -><input type="number" name="oct" class="chart-input" placeholder="oct" id="">
+		nov -><input type="number" name="nov" class="chart-input" placeholder="nov" id="">
+		dec -><input type="number" name="dec" class="chart-input" placeholder="dec" id="">
+		<button class="submit-chart" type="submit">submit</button>
+	</div>
+</form>
+{% endblock %}
+
+{% block 'jsblock'%}
+<script src="{% static 'js/updatechart.js' %}"></script>
+{% endblock %}

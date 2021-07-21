@@ -1,3 +1,5 @@
 from django.contrib import admin
+import clone.models as mod
 
-# Register your models here.
+admin.site.register(mod.lineChart)
+admin.site.register(mod.donutChart)

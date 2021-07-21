@@ -31,23 +31,23 @@
 }
 
 .server::-webkit-progress-bar{
-	background: var(--danger);
+	background: rgb(194, 194, 194);
 	border-radius: .5rem;
 }
 .sales::-webkit-progress-bar{
-	background: var(--warning);
+	background: rgb(194, 194, 194);
 	border-radius: .5rem;
 }
 .database::-webkit-progress-bar{
-	background: var(--primary-color);
+	background: rgb(194, 194, 194);
 	border-radius: .5rem;
 }
 .payout::-webkit-progress-bar{
-	background: var(--info);
+	background: rgb(194, 194, 194);
 	border-radius: .5rem;
 }
 .account::-webkit-progress-bar{
-	background: var(--success);
+	background: rgb(194, 194, 194);
 	border-radius: .5rem;
 }
 

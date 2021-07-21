@@ -454,3 +454,21 @@ code{
 	align-items: center;
 	flex-direction: column;
 }
+
+
+input{
+    outline: none;
+    border: none;
+    border-bottom:1px solid currentColor;
+    padding: .5rem;
+}
+
+.line-chart-form{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.input-wrapper>*{
+    margin: .5rem 1rem;
+}

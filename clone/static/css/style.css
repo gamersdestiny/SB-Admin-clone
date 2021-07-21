@@ -222,6 +222,7 @@ li{
 	outline: none;
 	border-radius: .3rem;
 	padding: 1rem;
+	margin-left: 1rem;
 	width: 75%;
 }
 .top-search:focus{

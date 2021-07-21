@@ -1,16 +1,42 @@
+// import { charted } from './updatechart';
 
 // ===================graph======================
 
-const lineChart = document.querySelector('.line-chart');
+var userdata = []
 
-var newChart = new Chart(lineChart, {
+
+function updateDefault(){
+	url = 'http://localhost:8000/listchart/'
+	fetch(url)
+	.then((resp) => (resp.json()))
+	.then(function(data){
+		var list = data[0];
+		iter = 0
+		for (let i in list){
+			
+			if((i==='chartName') || (i==='id')){
+				continue
+			}
+			userdata.push(list[i])
+			iter++;
+		}	
+	});
+};
+updateDefault()
+console.log(JSON.parse(JSON.stringify(userdata)), 'data')
+
+const lineChart = document.querySelector('.line-chart');
+setTimeout(()=>{
+
+	var newChart = new Chart(lineChart, {
 	
 	type: 'line',
 	data: {
 		labels: ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'],
 		datasets: [{
 			label: '',
-			data: [50, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000 ],
+			data: userdata,
+			// [50, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000 ],
 			backgroundColor: [
                 'rgba(78, 115, 223, 1)',
 			],
@@ -18,7 +44,7 @@ var newChart = new Chart(lineChart, {
                 'rgba(78, 115, 223, 1)',
 			],
 			borderWidth: 3,
-			tension: .3,
+			tension: .2,
 		}]
 	},
 	options: {
@@ -45,7 +71,7 @@ var newChart = new Chart(lineChart, {
 }
 });
 
-
+}, 600)
 // ====================================donught chart=========================================
 
 const donut = document.querySelector('.donut-chart');
@@ -67,6 +93,7 @@ var donutChart = new Chart(donut, {
 		}],
 	},
 	options: {
+		responsive: true,
 		maintainAspectRatio: false,
 		plugins: {
 			legend: {
@@ -76,3 +103,5 @@ var donutChart = new Chart(donut, {
 		}			
 	}
 })
+
+
