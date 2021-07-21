@@ -6,6 +6,36 @@ const cContainer = document.querySelector('.cc-container');
 const uContainer = document.querySelector('.uc-container');
 const iArrowRight = document.querySelector('.i-angle-right');
 
+const hamburger = document.querySelector('.hamburger');
+const hamCont = document.querySelector('.ham-items');
+var searchClicked = 0;
+
+hamburger.addEventListener('click', (e)=>{
+	if(searchClicked%2==0){
+		hamCont.classList.add('show');
+		searchClicked++;
+	} else {
+		hamCont.classList.remove('show');
+		searchClicked--
+	}
+});
+
+const searchBtn = document.querySelector('.search-icon');
+const searchBar = document.querySelector('.mob-search');
+var searchClicked = 0;
+
+searchBtn.addEventListener('click', (e)=>{
+	if(searchClicked%2==0){
+		searchBar.classList.add('show');
+		searchClicked++
+	} else {
+		searchBar.classList.remove('show');
+		searchClicked--
+	}
+})
+
+
+
 var iArwCount = 0;
 var arwCount = 0;
 
@@ -171,3 +201,4 @@ dots1.addEventListener('click', (e)=>{
 		dotClicks1--;
 	}
 });
+

@@ -2,9 +2,11 @@
 
 // ===================graph======================
 
+document.querySelector('.report-btn').addEventListener('click', (e)=>{
+	alert('sorry for the inconvenience feature is under development')
+});
+
 var userdata = []
-
-
 function updateDefault(){
 	url = 'http://localhost:8000/listchart/'
 	fetch(url)
@@ -23,7 +25,6 @@ function updateDefault(){
 	});
 };
 updateDefault()
-console.log(JSON.parse(JSON.stringify(userdata)), 'data')
 
 const lineChart = document.querySelector('.line-chart');
 setTimeout(()=>{
@@ -35,8 +36,9 @@ setTimeout(()=>{
 		labels: ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'],
 		datasets: [{
 			label: '',
-			data: userdata,
-			// [50, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000 ],
+			data: 
+			// userdata,
+			[50, 10000, 5000, 15000, 10000, 20000, 15000, 25000, 20000, 30000, 25000, 40000 ],
 			backgroundColor: [
                 'rgba(78, 115, 223, 1)',
 			],
@@ -44,7 +46,7 @@ setTimeout(()=>{
                 'rgba(78, 115, 223, 1)',
 			],
 			borderWidth: 3,
-			tension: .2,
+			tension: .3,
 		}]
 	},
 	options: {
@@ -71,7 +73,7 @@ setTimeout(()=>{
 }
 });
 
-}, 600)
+}, 1)
 // ====================================donught chart=========================================
 
 const donut = document.querySelector('.donut-chart');
@@ -103,5 +105,3 @@ var donutChart = new Chart(donut, {
 		}			
 	}
 })
-
-

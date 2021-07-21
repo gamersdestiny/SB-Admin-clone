@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
 from rest_framework import serializers
 
 from clone.models import lineChart, donutChart
@@ -41,7 +42,9 @@ def listChart(request):
 	serializer = chartSerializer(charts, many=True)
 	return Response(serializer.data)
 
+
 @api_view(['GET', 'UPDATE', 'POST'])
+@csrf_exempt
 def updateChart(request, pk):
 	charts = lineChart.objects.get(id=pk)
 	serializer = chartSerializer(instance=charts, data=request.data)

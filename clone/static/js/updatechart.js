@@ -1,39 +1,5 @@
 const submitbtn = document.querySelector('.submit-chart');
 
-submitbtn.addEventListener('click', (e)=>{
-	e.preventDefault()
-
-})
-
-function updateDefault(){
-	url = 'http://localhost:8000/listchart/'
-	fetch(url)
-	.then((resp) => (resp.json()))
-	.then(function(data){
-		console.log('data: ',data)
-		const chartData = document.querySelectorAll('.chart-input');
-		var list = data[0];
-		var iter = 0;
-		for (let i in list){
-			
-			if((i==='chartName') || (i==='id')){
-				continue
-			}
-			console.log(url)
-			chartData[iter].setAttribute('value', list[i]), 'chart attribute';
-			iter++;
-		}	
-	});
-};
-
-updateDefault();
-
-
-
-
-
-
-
 
 //csrf token
 
@@ -53,3 +19,39 @@ function getCookie(name) {
 	return cookieValue;
 }
 var csrftoken = getCookie('csrftoken');
+
+submitbtn.addEventListener('click', (e)=>{
+	e.preventDefault()
+	const charvalue = document.querySelectorAll('.chart-input');
+	
+	url = `https://localhost:8000/updatechart/1/`
+	alert('sorry for the inconvenience feature is under development')
+})
+
+function updateDefault(){
+	url = 'http://localhost:8000/listchart/'
+	fetch(url)
+	.then((resp) => (resp.json()))
+	.then(function(data){
+		const chartData = document.querySelectorAll('.chart-input');
+		var list = data[0];
+		var iter = 0;
+		for (let i in list){
+			
+			if((i==='chartName') || (i==='id')){
+				continue
+			}
+			chartData[iter].setAttribute('value', list[i]), 'chart attribute';
+			iter++;
+		}	
+	});
+};
+
+updateDefault();
+
+
+
+
+
+
+

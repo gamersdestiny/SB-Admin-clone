@@ -72,8 +72,26 @@
 		<div class="wrapper">
 			<div class="topnav">
 				<div class="nav-left">
-					<input type="search" name="top-search" class="top-search" placeholder="search for...">
-					<span class="icon-search"></span>
+					<span class="hamburger"><i class="fas fa-bars"></i></span>
+						<div class="ham-items shadow">
+							<a href="/" class="links">Home</a><br>
+							<div class="">
+								<h5 class="comps">CUSTOM COMPONENTS</h5>
+								<a href="/buttons" class="links">Buttons</a><br>
+								<a href="/cards" class="links">Cards</a>
+							</div>
+							<div class="">
+								<p class="comps">CUSTOM UTILITIES</p>
+								<a href="/colors" class="links">Colors</a><br>
+								<a href="/borders" class="links">Borders</a>
+							</div>
+						</div>
+						
+					<div class="mob-search shadow">
+						<input type="search" name="top-search" class="top-search" placeholder="search for...">
+						<span><i class="icon-search search-mobile"></i></span>
+					</div>
+					<span class="icon-search search-icon"></span>
 				</div>
 				<div class="nav-right">
 					<div class="notification"><i class="fas fa-bell fa-fw"></i><span class="noms">9<sup>+</sup></span></div>
@@ -84,6 +102,7 @@
 				</div>
 			</div>			
 			{% block content %}
+			
 			{% endblock  %}
 		</div>
 	</div>
@@ -95,6 +114,8 @@
 	<!-- =================================custom js===================================== -->
 	<script src="{% static 'js/app.js' %}"></script>
 	{% block 'jsblock' %}
+	
 	{% endblock %}
+	
 </body>
 </html>
