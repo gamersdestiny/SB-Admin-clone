@@ -43,7 +43,7 @@ def listChart(request):
 	return Response(serializer.data)
 
 
-@api_view(['GET', 'UPDATE', 'POST'])
+@api_view(['POST'])
 @csrf_exempt
 def updateChart(request, pk):
 	charts = lineChart.objects.get(id=pk)
