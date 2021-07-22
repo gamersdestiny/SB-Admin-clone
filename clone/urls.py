@@ -18,4 +18,4 @@ urlpatterns = [
 	path('updatechart/<str:pk>/', views.updateChart, name="updateCharts"),
 	path('apiview', views.apiResponse, name='api')
 
-]+staticfiles_urlpatterns
+]+staticfiles_urlpatterns()
