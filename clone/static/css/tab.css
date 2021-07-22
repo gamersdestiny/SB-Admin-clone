@@ -104,6 +104,7 @@
 
 	.nav-left{
 		margin: auto;
+		margin-left: 2rem;
 	}
 
 	.icon-search{
@@ -127,6 +128,9 @@
 		flex-direction: column;
 	}
 
+	.revenue-graph{
+		margin-top: .2rem;
+	}
 
 	.row{
 		flex-direction: column;
