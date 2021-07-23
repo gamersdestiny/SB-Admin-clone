@@ -33,12 +33,19 @@
 	.buttons-container{
 		flex-direction: column;
 	}
+
+	.top-search{
+		width: 40%;
+	}
 }
 
 /* tab mini pro */
 
 @media screen and (max-width:450px) {
 	.navbar-section{
+		position: absolute;
+		z-index: 99;
+		/* background: transparent; */
 		display: none;
 	}
 
@@ -54,12 +61,50 @@
 		flex-direction: column;
 	}
 
-	.top-search{
-		display: none;
+	.nav-left{
+		display: block;
 	}
+
+	.title{
+		margin-left: .5rem;
+	}
+
+	.mob-search{
+		position: absolute;
+		top: 3.5rem;
+		background: var(--white);
+		display: none;
+		border-radius: .5rem;
+		transition: .3s ease-out all;
+	}
+
+	.show{
+		display: block;
+	}
+
+	.hamburger{
+		display: inline;
+	}
+
+	.search-mobile{
+		padding: .3rem;
+		background: var(--primary-color);
+		margin: 0;
+		margin-left: .5rem;
+		display: inline;
+	}
+
+	.top-search{
+		width: auto;
+		margin-left: auto;
+		border-radius: .5rem;
+		transition: .3s ease-out all;
+	}
+
 
 	.nav-left{
 		margin: auto;
+		margin-left: 2.5rem;
 	}
 
 	.icon-search{
@@ -83,6 +128,9 @@
 		flex-direction: column;
 	}
 
+	.revenue-graph{
+		margin-top: .2rem;
+	}
 
 	.row{
 		flex-direction: column;

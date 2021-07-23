@@ -192,6 +192,13 @@
 	display: flex;
 }
 
+.donut-chart{
+	display: block;
+    box-sizing: border-box;
+    max-height: 278px;
+    max-width: 98%;
+}
+
 .line-chart{
 	width: 65%;
 	height: 17rem;
@@ -281,7 +288,7 @@
 }
 
 .dev-approach{
-	margin-top: 2.5rem;
+	margin-top: .5rem;
 	height: max-content;
 	position: relative;
 }
